@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <link href="//cdn.jsdelivr.net/jasmine/1.3.1/jasmine.css" type="text/css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/jasmine/1.3.1/jasmine.js" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/jasmine/1.3.1/jasmine-html.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-mocks.js"></script>
+    <!-- unit under test -->
+    <script src="js/manmonth.js"></script>
+    <script type="text/javascript">
+        describe('MonthController', function () {
+            beforeEach(module('myApp'));
+            var $controller;
+            beforeEach(inject(function (_$controller_) {
+                // The injector unwraps the underscores (_) from around the parameter names when matching
+                $controller = _$controller_;
+            }));
+            describe('$scope.manmonths', function () {
+                var $scope, controller;
+                beforeEach(function () {
+                    $scope = {};
+                    controller = $controller('myCtrl', {
+                        $scope: $scope
+                    });
+                });
+                //1.C language
+                it('sets the language to C and calculates man months', function () {
+                    $scope.language = 'C';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(11.03);
+                });
+                //2.VB .net
+                it('sets the language to vb.net and calculates man months', function () {
+                    $scope.language = 'VB.net';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(4.78);
+                });
+                //3.Python
+                it('sets the language to Python and calculates man months', function () {
+                    $scope.language = 'Python';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(6.74);
+                });
+                //4.Php
+                it('sets the language to Php and calculates man months', function () {
+                    $scope.language = 'Php';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(7.33);
+                });
+                //5.Perl 20.90
+                it('sets the language to Perl and calculates man months', function () {
+                    $scope.language = 'Perl';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(4.78);
+                });
+                //5.Pascal 11.29
+                it('sets the language to Pascal and calculates man months', function () {
+                    $scope.language = 'Pascal';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(8.86);
+                });
+               // 6.Oracle 16.75 - 5.970
+                it('sets the language to Oracle and calculates man months', function () {
+                    $scope.language = 'Oracle';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(5.97);
+                });
+                //7. Objective-C 19.42 - 5.149
+                it('sets the language to Objective-C and calculates man months', function () {
+                    $scope.language = 'Objective-C';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(5.15);
+                });
+                //8.Lyric 14.85 6.734
+                it('sets the language to Lyric and calculates man months', function () {
+                    $scope.language = 'Lyric';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(6.73);
+                });
+                //9.Jovial 10.27 9.737
+                it('sets the language to Jovial and calculates man months', function () {
+                    $scope.language = 'Jovial';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(9.74);
+                });
+                //10.Eclipse 15.38 6.501
+                it('sets the language to Eclipse and calculates man months', function () {
+                    $scope.language = 'Eclipse';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(6.50);
+                });
+                //11.Cognos 17.53 5.704
+                it('sets the language to Cognos and calculates man months', function () {
+                    $scope.language = 'Cognos';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(5.70);
+                });
+                //12.Cobra 21.32 4.690
+                it('sets the language to Cobra and calculates man months', function () {
+                    $scope.language = 'Cobra';
+                    $scope.functionpoints = "100";
+                    $scope.calculateManMonths();
+                    expect($scope.manmonths).toEqual(4.69);
+                });
+            });
+        });
+        window.onload = function () {
+            var env = jasmine.getEnv();
+            env.addReporter(new jasmine.HtmlReporter());
+            env.execute();
+        };
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
