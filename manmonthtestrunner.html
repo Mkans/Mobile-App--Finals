@@ -40,40 +40,40 @@
                     $scope.calculateManMonths();
                     expect($scope.manmonths).toEqual(4.78);
                 });
-                //3.Python
-                it('sets the language to Python and calculates man months', function () {
-                    $scope.language = 'Python';
+                //3.2nd Generation default
+                it('sets the language to 2nd Generation default and calculates man months', function () {
+                    $scope.language = '2nd Generation default';
                     $scope.functionpoints = "100";
                     $scope.calculateManMonths();
-                    expect($scope.manmonths).toEqual(6.74);
+                    expect($scope.manmonths).toEqual(9.74);
                 });
-                //4.Php
-                it('sets the language to Php and calculates man months', function () {
-                    $scope.language = 'Php';
+                //4.3rd Generation default
+                it('sets the language to3rd Generation default and calculates man months', function () {
+                    $scope.language = '3rd Generation default';
                     $scope.functionpoints = "100";
                     $scope.calculateManMonths();
-                    expect($scope.manmonths).toEqual(7.33);
+                    expect($scope.manmonths).toEqual(8.22);
                 });
-                //5.Perl 20.90
-                it('sets the language to Perl and calculates man months', function () {
-                    $scope.language = 'Perl';
+                //5.4th Generation default
+                it('sets the language to 4th Generation default and calculates man months', function () {
+                    $scope.language = '4th Generation default';
                     $scope.functionpoints = "100";
                     $scope.calculateManMonths();
-                    expect($scope.manmonths).toEqual(4.78);
+                    expect($scope.manmonths).toEqual(4.69);
                 });
-                //5.Pascal 11.29
+                //5.AAS Macro 11.29
                 it('sets the language to Pascal and calculates man months', function () {
-                    $scope.language = 'Pascal';
+                    $scope.language = 'AAS Macro';
                     $scope.functionpoints = "100";
                     $scope.calculateManMonths();
                     expect($scope.manmonths).toEqual(8.86);
                 });
-               // 6.Oracle 16.75 - 5.970
+               // 6.5th Generation default
                 it('sets the language to Oracle and calculates man months', function () {
-                    $scope.language = 'Oracle';
+                    $scope.language = '5th Generation default';
                     $scope.functionpoints = "100";
                     $scope.calculateManMonths();
-                    expect($scope.manmonths).toEqual(5.97);
+                    expect($scope.manmonths).toEqual(3.22);
                 });
                 //7. Objective-C 19.42 - 5.149
                 it('sets the language to Objective-C and calculates man months', function () {

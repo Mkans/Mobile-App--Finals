@@ -9,20 +9,20 @@ angular.module("myApp", []).controller("myCtrl", function ($scope) {
         }else if($scope.language == "VB.net"){
             nManMonths = $scope.functionpoints / 20.90;
         }
-        else if($scope.language == "Python"){
-            nManMonths = $scope.functionpoints / 14.84;
+        else if($scope.language == "2nd Generation default"){
+            nManMonths = $scope.functionpoints / 10.27;
         }
-        else if($scope.language == "Php"){
-            nManMonths = $scope.functionpoints / 13.64;
+        else if($scope.language == "3rd Generation default"){
+            nManMonths = $scope.functionpoints / 12.17;
         }
-        else if($scope.language == "Perl"){
-            nManMonths = $scope.functionpoints / 20.90;
+        else if($scope.language == "4th Generation default"){
+            nManMonths = $scope.functionpoints / 21.33;
         }
-        else if($scope.language == "Pascal"){
+        else if($scope.language == "AAS Macro"){
             nManMonths = $scope.functionpoints / 11.29;
         }
-        else if($scope.language == "Oracle"){
-            nManMonths = $scope.functionpoints / 16.75;
+        else if($scope.language == "5th Generation default"){
+            nManMonths = $scope.functionpoints / 31.07;
         }
         else if($scope.language == "Objective-C"){
             nManMonths = $scope.functionpoints / 19.42;
